@@ -64,6 +64,10 @@
     --space-3xl: 3rem;
   }
 
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+
   .nav-desktop,
   .header-phone-btn {
     display: none;
@@ -71,17 +75,23 @@
 
   .btn-mobile-toggle {
     display: flex;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
   }
 
   .mobile-bottom-bar {
     display: block;
   }
 
+  /* Hide redundant floating bubble on mobile since bottom bar is fixed */
   .floating-whatsapp {
-    bottom: 5rem;
-    right: 1.25rem;
-    width: 52px;
-    height: 52px;
+    display: none !important;
+  }
+
+  .project-card {
+    width: min(320px, 82vw);
   }
 
   .hero-section {
@@ -98,6 +108,7 @@
 
   .hero-actions .btn {
     width: 100%;
+    min-height: 48px; /* Accessible mobile touch target */
   }
 
   .hero-trust-badges {
@@ -177,6 +188,20 @@
 
   .before-after-container {
     height: 280px;
+  }
+
+  .diag-options-group {
+    grid-template-columns: 1fr;
+  }
+
+  .diag-btn {
+    min-height: 48px;
+  }
+
+  .locality-tab-btn {
+    min-height: 44px;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
