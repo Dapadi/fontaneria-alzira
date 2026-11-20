@@ -138,6 +138,20 @@
   <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
   <div class="reading-progress-bar" aria-hidden="true"></div>
 
+  <!-- Live Operational Status Ticker -->
+  <aside class="live-status-ticker" role="status" aria-label="Estado del taller móvil en Alzira">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+      <div class="ticker-content">
+        <span class="ticker-item"><span class="live-indicator-dot" aria-hidden="true"></span> <strong>Taller móvil en ruta hoy en Alzira</strong></span>
+        <span class="ticker-item">• Tiempo de respuesta estimado: <strong>15 - 30 min</strong></span>
+        <span class="ticker-item">• Trato directo con el fontanero</span>
+      </div>
+      <div class="tech-meta-stamp">
+        BASE: 39.15°N 0.43°W // ALZIRA (46600)
+      </div>
+    </div>
+  </aside>
+
   <!-- Header -->
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -273,132 +287,140 @@
       </div>
     </section>
 
-    <!-- 4.3 Servicios Principales -->
+    <!-- 4.3 Servicios Principales: Bento Grid Editorial -->
     <section class="section section-bg-secondary" id="servicios" aria-labelledby="servicios-title">
       <div class="container">
         <div class="section-header">
           <div class="badge-tag">SERVICIOS DE FONTANERÍA</div>
           <h2 id="servicios-title">¿En qué podemos ayudarte?</h2>
-          <p class="section-subtitle">Soluciones de fontanería adaptadas a tu hogar, comunidad o negocio.</p>
+          <p class="section-subtitle">Soluciones de fontanería precisas y transparentes adaptadas a tu hogar, comunidad o negocio.</p>
         </div>
 
-        <div class="grid-4 services-grid">
-          <!-- Card 1 -->
-          <article class="card-service">
-            <div class="card-service-img-wrapper">
-              <img src="/images/service-fugas.jpg" alt="Detección y reparación de fugas en tuberías de cobre" loading="lazy" width="400" height="260">
-              <div class="card-service-icon-badge"><i data-lucide="droplets"></i></div>
-            </div>
-            <div class="card-service-body">
-              <h3 class="card-service-title">Reparación de fugas</h3>
-              <p class="card-service-desc">Localización precisa sin roturas innecesarias y reparación de fugas en tuberías de agua sanitaria y calefacción.</p>
-              <a href="/servicios/reparacion-fugas/" class="card-service-link">
-                Ver servicio <i data-lucide="arrow-right"></i>
-              </a>
+        <div class="bento-services-grid">
+          <!-- Bento Item 1 (Span 8): Detección de Fugas con visualizador acústico -->
+          <article class="bento-card bento-span-8">
+            <span class="bento-featured-badge">Servicio Especializado</span>
+            <div class="bento-media-split">
+              <div class="bento-img-wrap">
+                <img src="/images/service-fugas.jpg" alt="Detección electroacústica de fugas en tuberías de cobre sin romper" loading="lazy" width="600" height="420">
+              </div>
+              <div class="bento-content-pad">
+                <div>
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                    <div style="color: var(--color-primary); display: flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 0.85rem;">
+                      <i data-lucide="radio"></i>
+                      <span>GEÓFONO ELECTROACÚSTICO</span>
+                    </div>
+                    <span class="tech-meta-stamp">PRECISIÓN ±10CM</span>
+                  </div>
+
+                  <h3 style="font-size: 1.45rem; color: var(--color-navy); margin-bottom: 0.5rem;">Detección y reparación de fugas</h3>
+                  <p style="font-size: 0.92rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+                    Localizamos el punto exacto de la rotura mediante correlación acústica de frecuencias sin picar paredes ni suelos a ciegas.
+                  </p>
+
+                  <!-- Soundwave SVG Representation -->
+                  <div style="margin-bottom: 1rem;">
+                    <svg class="soundwave-svg" viewBox="0 0 120 20" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M0 10 Q10 2, 20 10 T40 10 T60 2 T80 18 T100 10 T120 10" />
+                    </svg>
+                  </div>
+
+                  <div class="bento-feature-specs">
+                    <div class="bento-spec-item">
+                      <strong>Tecnología no invasiva</strong>
+                      <span>Ahorro en reposición de azulejos</span>
+                    </div>
+                    <div class="bento-spec-item">
+                      <strong>Intervención rápida</strong>
+                      <span>Duración media: 60 - 90 min</span>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="/servicios/reparacion-fugas/" class="card-service-link">
+                  Ver protocolo de detección de fugas <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
             </div>
           </article>
 
-          <!-- Card 2 -->
-          <article class="card-service">
-            <div class="card-service-img-wrapper">
-              <img src="/images/service-desatascos.jpg" alt="Desatasco limpio de desagüe con máquina de espiral electromecánica" loading="lazy" width="400" height="260">
+          <!-- Bento Item 2 (Span 4): Desatascos Limpios con Espiral -->
+          <article class="bento-card bento-span-4">
+            <div class="card-service-img-wrapper" style="height: 200px;">
+              <img src="/images/service-desatascos.jpg" alt="Desatasco mecánico con tambor de espiral de acero" loading="lazy" width="400" height="240">
               <div class="card-service-icon-badge"><i data-lucide="sparkles"></i></div>
             </div>
-            <div class="card-service-body">
-              <h3 class="card-service-title">Desatascos y limpiezas</h3>
-              <p class="card-service-desc">Desobstrucción rápida y limpia de fregaderos, inodoros, botes sifónicos y desagües sin dañar conducciones.</p>
+            <div class="bento-content-pad" style="flex-grow: 1;">
+              <div>
+                <span class="tech-meta-stamp" style="margin-bottom: 0.35rem; display: block;">MÉTODO MECÁNICO LIMPIO</span>
+                <h3 style="font-size: 1.25rem; color: var(--color-navy); margin-bottom: 0.5rem;">Desatascos y desobstrucciones</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.55; margin-bottom: 1.25rem;">
+                  Eliminamos tapones en fregaderos, inodoros y bajantes con maquinaria electromecánica de espiral. Sin químicos cáusticos corrosivos.
+                </p>
+              </div>
               <a href="/servicios/desatascos/" class="card-service-link">
-                Ver servicio <i data-lucide="arrow-right"></i>
+                Detalles del servicio <i data-lucide="arrow-right"></i>
               </a>
             </div>
           </article>
 
-          <!-- Card 3 -->
-          <article class="card-service">
-            <div class="card-service-img-wrapper">
-              <img src="/images/service-instalaciones.jpg" alt="Instalación de colector de fontanería con llaves de corte y manómetro" loading="lazy" width="400" height="260">
-              <div class="card-service-icon-badge"><i data-lucide="wrench"></i></div>
-            </div>
-            <div class="card-service-body">
-              <h3 class="card-service-title">Instalaciones de fontanería</h3>
-              <p class="card-service-desc">Montaje y renovación integral de redes de agua en cobre y multicapa para reformas, comercios y viviendas.</p>
-              <a href="/servicios/instalaciones-fontaneria/" class="card-service-link">
-                Ver servicio <i data-lucide="arrow-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="card-service">
-            <div class="card-service-img-wrapper">
-              <img src="/images/service-reformas.jpg" alt="Reforma de fontanería en baño moderno con ducha a ras de suelo" loading="lazy" width="400" height="260">
-              <div class="card-service-icon-badge"><i data-lucide="bath"></i></div>
-            </div>
-            <div class="card-service-body">
-              <h3 class="card-service-title">Reformas de baños</h3>
-              <p class="card-service-desc">Cambio de bañera por plato de ducha de resina, redistribución de tomas de agua y desagües empotrados.</p>
-              <a href="/servicios/reformas-banos/" class="card-service-link">
-                Ver servicio <i data-lucide="arrow-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 5 -->
-          <article class="card-service">
-            <div class="card-service-img-wrapper">
-              <img src="/images/service-termos.jpg" alt="Instalación de termo eléctrico mural con válvulas de seguridad" loading="lazy" width="400" height="260">
+          <!-- Bento Item 3 (Span 4): Instalación de Termos Antical -->
+          <article class="bento-card bento-span-4">
+            <div class="card-service-img-wrapper" style="height: 200px;">
+              <img src="/images/service-termos.jpg" alt="Instalación de termo eléctrico mural con manguitos antical" loading="lazy" width="400" height="240">
               <div class="card-service-icon-badge"><i data-lucide="flame"></i></div>
             </div>
-            <div class="card-service-body">
-              <h3 class="card-service-title">Instalación de termos</h3>
-              <p class="card-service-desc">Montaje y sustitución de termos eléctricos de bajo consumo con manguitos antical y verificación inmediata.</p>
-              <a href="/servicios/" class="card-service-link">
-                Ver servicio <i data-lucide="arrow-right"></i>
+            <div class="bento-content-pad" style="flex-grow: 1;">
+              <div>
+                <span class="tech-meta-stamp" style="margin-bottom: 0.35rem; display: block;">PROTECCIÓN AGUA DURA</span>
+                <h3 style="font-size: 1.25rem; color: var(--color-navy); margin-bottom: 0.5rem;">Instalación de termos eléctricos</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.55; margin-bottom: 1.25rem;">
+                  Montaje de termos de bajo consumo (Cointra, Ariston) adaptados a la alta mineralización de La Ribera con manguitos dieléctricos.
+                </p>
+              </div>
+              <a href="/contacto/" class="card-service-link">
+                Pedir presupuesto termo <i data-lucide="arrow-right"></i>
               </a>
             </div>
           </article>
 
-          <!-- Card 6 -->
-          <article class="card-service">
-            <div class="card-service-img-wrapper">
-              <img src="/images/service-griferia.jpg" alt="Sustitución de grifería monomando y llaves de escuadra" loading="lazy" width="400" height="260">
-              <div class="card-service-icon-badge"><i data-lucide="cog"></i></div>
+          <!-- Bento Item 4 (Span 4): Reformas de Baños -->
+          <article class="bento-card bento-span-4">
+            <div class="card-service-img-wrapper" style="height: 200px;">
+              <img src="/images/service-reformas.jpg" alt="Reforma de fontanería para plato de ducha y grifería empotrada" loading="lazy" width="400" height="240">
+              <div class="card-service-icon-badge"><i data-lucide="bath"></i></div>
             </div>
-            <div class="card-service-body">
-              <h3 class="card-service-title">Reparación de grifería</h3>
-              <p class="card-service-desc">Sustitución e instalación de grifos monomando, termostáticos, columnas de ducha y llaves de escuadra antical.</p>
-              <a href="/servicios/" class="card-service-link">
-                Ver servicio <i data-lucide="arrow-right"></i>
+            <div class="bento-content-pad" style="flex-grow: 1;">
+              <div>
+                <span class="tech-meta-stamp" style="margin-bottom: 0.35rem; display: block;">CONFORT Y ACCESIBILIDAD</span>
+                <h3 style="font-size: 1.25rem; color: var(--color-navy); margin-bottom: 0.5rem;">Reformas de baños y duchas</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.55; margin-bottom: 1.25rem;">
+                  Cambio de bañera por plato de ducha de resina, sanitarios suspendidos, tomas empotradas y desagües de gran caudal.
+                </p>
+              </div>
+              <a href="/servicios/reformas-banos/" class="card-service-link">
+                Ver proyectos de baño <i data-lucide="arrow-right"></i>
               </a>
             </div>
           </article>
 
-          <!-- Card 7 -->
-          <article class="card-service">
-            <div class="card-service-img-wrapper">
-              <img src="/images/service-comunidades.jpg" alt="Mantenimiento preventivo en colector comunitario de edificio" loading="lazy" width="400" height="260">
+          <!-- Bento Item 5 (Span 4): Comunidades de Propietarios -->
+          <article class="bento-card bento-span-4">
+            <div class="card-service-img-wrapper" style="height: 200px;">
+              <img src="/images/service-comunidades.jpg" alt="Mantenimiento en colector de edificio y grupos de presión" loading="lazy" width="400" height="240">
               <div class="card-service-icon-badge"><i data-lucide="shield-check"></i></div>
             </div>
-            <div class="card-service-body">
-              <h3 class="card-service-title">Mantenimiento de comunidades</h3>
-              <p class="card-service-desc">Reparación de bajantes comunitarias, grupos de presión y servicios concertados para administradores de fincas.</p>
+            <div class="bento-content-pad" style="flex-grow: 1;">
+              <div>
+                <span class="tech-meta-stamp" style="margin-bottom: 0.35rem; display: block;">FINCAS Y ADMINISTRADORES</span>
+                <h3 style="font-size: 1.25rem; color: var(--color-navy); margin-bottom: 0.5rem;">Comunidades y bajantes</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-secondary); line-height: 1.55; margin-bottom: 1.25rem;">
+                  Reparación prioritaria de bajantes comunitarias insonorizadas, grupos de presión y baterías de contadores con informe pericial.
+                </p>
+              </div>
               <a href="/servicios/mantenimiento/" class="card-service-link">
-                Ver servicio <i data-lucide="arrow-right"></i>
-              </a>
-            </div>
-          </article>
-
-          <!-- Card 8 -->
-          <article class="card-service">
-            <div class="card-service-img-wrapper">
-              <img src="/images/service-tuberias.jpg" alt="Reparación de tramos dañados de tubería de cobre y polietileno" loading="lazy" width="400" height="260">
-              <div class="card-service-icon-badge"><i data-lucide="hammer"></i></div>
-            </div>
-            <div class="card-service-body">
-              <h3 class="card-service-title">Reparación de tuberías</h3>
-              <p class="card-service-desc">Renovación de tramos con pérdidas, sellado de juntas, eliminación de ruidos y sustitución de tuberías antiguas.</p>
-              <a href="/servicios/" class="card-service-link">
-                Ver servicio <i data-lucide="arrow-right"></i>
+                Servicio para comunidades <i data-lucide="arrow-right"></i>
               </a>
             </div>
           </article>
@@ -406,61 +428,168 @@
       </div>
     </section>
 
-    <!-- 4.4 Cobertura Geográfica -->
-    <section class="section" id="zonas" aria-labelledby="zonas-title">
+    <!-- ASISTENTE ORIGINAL: Diagnóstico Rápido de Avería en 3 Clics -->
+    <section class="section" id="asistente-diagnostico" aria-label="Asistente interactivo de diagnóstico rápido">
+      <div class="container">
+        <div id="diagnostic-tool" class="diagnostic-container">
+          <div class="diag-header">
+            <div class="badge-tag badge-tag-white">HERRAMIENTA EXCLUSIVA</div>
+            <h2 style="color: var(--color-white); font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 0.5rem;">
+              Diagnóstico rápido de avería en 3 clics
+            </h2>
+            <p style="color: #CBD5E1; font-size: 0.95rem; margin-bottom: 0;">
+              Selecciona tu caso para recibir una pauta inmediata de seguridad y preconfigurar tu consulta directa por WhatsApp con todos los datos técnicos.
+            </p>
+          </div>
+
+          <div class="diag-grid-split">
+            <div>
+              <!-- Paso 1 -->
+              <div class="diag-step-title">
+                <span>1</span> ¿Qué tipo de avería o necesidad tienes?
+              </div>
+              <div class="diag-options-group">
+                <button type="button" class="diag-btn is-selected" data-diag-problem="fuga">
+                  <span class="diag-btn-title">Fuga de agua</span>
+                  <span class="diag-btn-sub">Pérdida en tubería o junta</span>
+                </button>
+                <button type="button" class="diag-btn" data-diag-problem="atasco">
+                  <span class="diag-btn-title">Atasco de desagüe</span>
+                  <span class="diag-btn-sub">Fregadero, ducha o WC</span>
+                </button>
+                <button type="button" class="diag-btn" data-diag-problem="termo">
+                  <span class="diag-btn-title">Termo eléctrico</span>
+                  <span class="diag-btn-sub">Goteo o sin agua caliente</span>
+                </button>
+                <button type="button" class="diag-btn" data-diag-problem="presion">
+                  <span class="diag-btn-title">Presión / Ruidos</span>
+                  <span class="diag-btn-sub">Golpe de ariete o poco caudal</span>
+                </button>
+              </div>
+
+              <!-- Paso 2 -->
+              <div class="diag-step-title">
+                <span>2</span> ¿Dónde se ubica en la vivienda?
+              </div>
+              <div class="diag-options-group">
+                <button type="button" class="diag-btn is-selected" data-diag-location="cocina">
+                  <span class="diag-btn-title">Cocina</span>
+                  <span class="diag-btn-sub">Bajo fregadero / llave</span>
+                </button>
+                <button type="button" class="diag-btn" data-diag-location="baño">
+                  <span class="diag-btn-title">Baño principal</span>
+                  <span class="diag-btn-sub">Ducha / lavabo / inodoro</span>
+                </button>
+                <button type="button" class="diag-btn" data-diag-location="galería">
+                  <span class="diag-btn-title">Galería / Terraza</span>
+                  <span class="diag-btn-sub">Termo / lavadora</span>
+                </button>
+                <button type="button" class="diag-btn" data-diag-location="comunidad">
+                  <span class="diag-btn-title">Comunidad</span>
+                  <span class="diag-btn-sub">Bajante / arqueta</span>
+                </button>
+              </div>
+
+              <!-- Paso 3 -->
+              <div class="diag-step-title">
+                <span>3</span> ¿Cuál es el grado de urgencia?
+              </div>
+              <div class="diag-options-group">
+                <button type="button" class="diag-btn is-selected" data-diag-urgency="alta">
+                  <span class="diag-btn-title">Urgente</span>
+                  <span class="diag-btn-sub">Pérdida continua activa</span>
+                </button>
+                <button type="button" class="diag-btn" data-diag-urgency="media">
+                  <span class="diag-btn-title">Moderada</span>
+                  <span class="diag-btn-sub">Goteo o desagüe lento</span>
+                </button>
+                <button type="button" class="diag-btn" data-diag-urgency="baja">
+                  <span class="diag-btn-title">Planificada</span>
+                  <span class="diag-btn-sub">Presupuesto o reforma</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Panel de Resultados Dinámico -->
+            <div class="diag-result-card">
+              <h4>
+                <i data-lucide="activity" style="color: #10B981;"></i>
+                <span>Diagnóstico preliminar</span>
+              </h4>
+
+              <div class="diag-summary-tags">
+                <span class="diag-summary-tag" id="diag-summary-problem">Fuga de agua con pérdida activa</span>
+                <span class="diag-summary-tag" id="diag-summary-location">Cocina</span>
+                <span class="diag-summary-tag" id="diag-summary-urgency">Urgente</span>
+              </div>
+
+              <div class="diag-advice-box" id="diag-advice">
+                Cierra la llave de paso general de tu vivienda. Desconecta aparatos eléctricos próximos. Nuestro fontanero acudirá con detector acústico para localizar la rotura sin picar a ciegas.
+              </div>
+
+              <a id="diag-whatsapp-btn" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full btn-lg">
+                <i data-lucide="message-circle"></i>
+                Enviar diagnóstico a WhatsApp
+              </a>
+              <p style="text-align: center; font-size: 0.78rem; opacity: 0.7; margin-top: 0.75rem; margin-bottom: 0;">
+                Se abrirá tu WhatsApp con el informe ya redactado para recibir presupuesto inmediato.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4.4 Cobertura Geográfica: Matriz Interactiva de La Ribera -->
+    <section class="section section-bg-secondary" id="zonas" aria-labelledby="zonas-title">
       <div class="container">
         <div class="section-header">
-          <div class="badge-tag">ÁREA DE ACTUACIÓN</div>
-          <h2 id="zonas-title">Tu fontanero en Alzira y La Ribera.</h2>
-          <p class="section-subtitle">Prestamos asistencia técnica rápida en Alzira y los municipios cercanos de la comarca.</p>
+          <div class="badge-tag">ÁREA DE ACTUACIÓN & DUREZA DEL AGUA</div>
+          <h2 id="zonas-title">Tu fontanero en Alzira y La Ribera</h2>
+          <p class="section-subtitle">Tiempos reales de desplazamiento y datos técnicos sobre la mineralización del agua por municipio.</p>
         </div>
 
-        <div class="coverage-map-wrapper">
-          <div class="coverage-towns-grid">
-            <a href="/zonas/alzira/" class="town-chip is-center">
-              <span>Alzira (Sede Central)</span>
-              <i data-lucide="map-pin"></i>
-            </a>
-            <a href="/zonas/carcaixent/" class="town-chip">
-              <span>Carcaixent</span>
-              <span class="card-zone-dist">4 km</span>
-            </a>
-            <a href="/zonas/algemesi/" class="town-chip">
-              <span>Algemesí</span>
-              <span class="card-zone-dist">6 km</span>
-            </a>
-            <a href="/zonas/alberic/" class="town-chip">
-              <span>Alberic</span>
-              <span class="card-zone-dist">10 km</span>
-            </a>
-            <div class="town-chip">
-              <span>Guadassuar</span>
-              <span class="card-zone-dist">5 km</span>
+        <div id="localities-matrix" class="locality-matrix-box">
+          <!-- Selector de municipios -->
+          <div class="locality-tabs-nav" role="tablist" aria-label="Municipios de La Ribera">
+            <button type="button" class="locality-tab-btn is-active" data-town-key="alzira">📍 Alzira (Sede)</button>
+            <button type="button" class="locality-tab-btn" data-town-key="carcaixent">Carcaixent (4 km)</button>
+            <button type="button" class="locality-tab-btn" data-town-key="algemesi">Algemesí (6 km)</button>
+            <button type="button" class="locality-tab-btn" data-town-key="alberic">Alberic (10 km)</button>
+            <button type="button" class="locality-tab-btn" data-town-key="guadassuar">Guadassuar (5 km)</button>
+            <button type="button" class="locality-tab-btn" data-town-key="lalcudia">L'Alcúdia (9 km)</button>
+          </div>
+
+          <!-- Datos del municipio seleccionado -->
+          <div class="matrix-data-grid">
+            <div class="matrix-stat-item">
+              <span class="stat-label">Distancia desde taller</span>
+              <span class="stat-value" id="matrix-town-dist">0 km (Sede central)</span>
             </div>
-            <div class="town-chip">
-              <span>L'Alcúdia</span>
-              <span class="card-zone-dist">9 km</span>
+            <div class="matrix-stat-item">
+              <span class="stat-label">Tiempo de llegada (ETA)</span>
+              <span class="stat-value" id="matrix-town-eta" style="color: var(--color-primary);">10 - 20 minutos</span>
             </div>
-            <div class="town-chip">
-              <span>Massalavés</span>
-              <span class="card-zone-dist">8 km</span>
-            </div>
-            <div class="town-chip">
-              <span>Benimuslem</span>
-              <span class="card-zone-dist">6 km</span>
-            </div>
-            <div class="town-chip">
-              <span>Corbera</span>
-              <span class="card-zone-dist">12 km</span>
-            </div>
-            <div class="town-chip">
-              <span>Riola</span>
-              <span class="card-zone-dist">14 km</span>
+            <div class="matrix-stat-item">
+              <span class="stat-label">Dureza del agua local</span>
+              <span class="stat-value" id="matrix-town-hardness" style="color: #D97706;">38 °fH</span>
             </div>
           </div>
 
-          <div class="coverage-callout">
-            ¿No encuentras tu localidad? <a href="https://wa.me/34600000000?text=Hola,%20vivo%20cerca%20de%20Alzira%20y%20quer%C3%ADa%20consultar%20si%20prest%C3%A1is%20servicio%20en%20mi%20zona." target="_blank" rel="noopener noreferrer">Consúltanos sin compromiso</a> y te confirmaremos disponibilidad de desplazamiento.
+          <div class="matrix-advice-panel">
+            <h5 id="matrix-town-watertype">Agua muy dura con alta mineralización calcárea</h5>
+            <p id="matrix-town-notes">
+              En el casco antiguo (La Vila y Santos Patronos) es común encontrar tuberías de hierro galvanizado o plomo antiguo que requieren renovación. En urbanizaciones elevadas como El Respirall o El Racó revisamos grupos de sobrepresión.
+            </p>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+            <a id="matrix-town-link" href="/zonas/alzira/" class="link-animated" style="font-size: 0.95rem;">
+              Ver servicio de fontanería en Alzira →
+            </a>
+            <a id="matrix-town-whatsapp" href="https://wa.me/34600000000" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <i data-lucide="message-circle"></i> Consultar llegada a este municipio
+            </a>
           </div>
         </div>
       </div>

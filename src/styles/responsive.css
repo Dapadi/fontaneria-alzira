@@ -179,3 +179,45 @@
     height: 280px;
   }
 }
+
+
+/* Responsive rules for bespoke Bento Grid, Diagnostic and Matrix */
+@media (max-width: 1024px) {
+  .bento-span-8,
+  .bento-span-4,
+  .bento-span-6 {
+    grid-column: span 12;
+  }
+
+  .bento-media-split {
+    grid-template-columns: 1fr;
+  }
+
+  .diag-grid-split {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .matrix-data-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .live-status-ticker {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .ticker-item:nth-child(n+3) {
+    display: none; /* Keep ticker concise on mobile */
+  }
+
+  .bento-content-pad {
+    padding: 1.5rem;
+  }
+
+  .bento-feature-specs {
+    grid-template-columns: 1fr;
+  }
+}

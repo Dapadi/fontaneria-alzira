@@ -24,7 +24,15 @@ import {
   Sliders,
   Award,
   Mail,
-  AlertCircle
+  AlertCircle,
+  Activity,
+  Compass,
+  Waves,
+  Radio,
+  Info,
+  HelpCircle,
+  Check,
+  Filter
 } from 'lucide';
 
 import { initNavigation } from './navigation';
@@ -33,6 +41,8 @@ import { initGallery } from './gallery';
 import { initAccordion } from './accordion';
 import { initContactForm } from './contact';
 import { initAnalytics } from './analytics';
+import { initDiagnosticTool } from './diagnostic';
+import { initLocalitiesMatrix } from './localities';
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Initialize Lucide Icons
@@ -62,7 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
       Sliders,
       Award,
       Mail,
-      AlertCircle
+      AlertCircle,
+      Activity,
+      Compass,
+      Waves,
+      Radio,
+      Info,
+      HelpCircle,
+      Check,
+      Filter
     }
   });
 
@@ -73,4 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccordion();
   initContactForm();
   initAnalytics();
+  initDiagnosticTool();
+  initLocalitiesMatrix();
 });
